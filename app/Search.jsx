@@ -56,7 +56,7 @@ const Search = () => {
                 <View className="flex-1 mr-2 relative justify-center">
                     <TextInput style={{
                         fontFamily: 'BarlowSemiCondensed-Regular',
-                    }} onChangeText={(text) => setQuery(text)} className=" bg-transparent border-[1px] border-white rounded-full py-2.5 pl-3 pr-14 text-white" placeholderTextColor={'rgba(255,255,255, 0.5)'} placeholder='Search' />
+                    }} onChangeText={(text) => setQuery(text)} className=" bg-transparent border-[1px] border-white rounded-full py-4 pl-3 pr-14 text-white" placeholderTextColor={'rgba(255,255,255, 0.5)'} placeholder='Search' />
                     <TouchableOpacity onPress={() => {
                         query.length > 0 ? getSearchData() : console.log("input first")
                     }} className={`absolute right-1.5 ${query.length > 0 ? "bg-white " : "bg-white/[0.3]"} rounded-full p-2.5`}>
@@ -75,7 +75,7 @@ const Search = () => {
 
 export default Search
 
-const SearchICON = () => {
+const SearchICON = ({color="#FFF"}) => {
     return (
         <View className="flex-1 justify-center items-center">
             <Ionicons name='search-outline' size={width * 0.5} color={'#232323'} />

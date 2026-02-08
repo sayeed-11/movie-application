@@ -10,12 +10,12 @@ export default function Layout() {
             <Drawer
                 drawerContent={CustomDrawerComponent}
                 screenOptions={{
-                    drawerActiveBackgroundColor: "#22ff22",
-                    drawerActiveTintColor: 'red',
+                    drawerActiveBackgroundColor: "#FFFFFF",
+                    drawerActiveTintColor: '#000',
                     drawerContentStyle:{
                         backgroundColor:'black'
                     },
-                    drawerInactiveTintColor : 'gray',
+                    drawerInactiveTintColor : '#FFF',
                     // drawerHideStatusBarOnOpen : true
                 }}
             >
@@ -37,7 +37,7 @@ export default function Layout() {
                                         color: color,
                                         fontFamily: 'BarlowSemiCondensed-SemiBold',
                                         fontSize: 15
-                                    }}>HOME</Text>
+                                    }}>Home</Text>
                                 </View>
                             )
                         }
@@ -60,7 +60,7 @@ export default function Layout() {
                                         color: color,
                                         fontFamily: 'BarlowSemiCondensed-SemiBold',
                                         fontSize: 15
-                                    }}>FAVOURITE</Text>
+                                    }}>Favourites</Text>
                                 </View>
                             )
                         }
@@ -83,7 +83,7 @@ export default function Layout() {
                                         color: color,
                                         fontFamily: 'BarlowSemiCondensed-SemiBold',
                                         fontSize: 15
-                                    }}>SETTINGS</Text>
+                                    }}>Settings</Text>
                                 </View>
                             )
                         }

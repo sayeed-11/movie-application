@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { View, Animated, StyleSheet } from 'react-native';
 import Svg, { G, Rect } from 'react-native-svg';
 
-const Spinner = () => {
+const Spinner = ({color="#FFF"}) => {
   const animations = Array.from({ length: 12 }, () => useRef(new Animated.Value(0)).current);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const Spinner = () => {
     return (
       <G key={index} transform={`rotate(${rotation} 50 50)`}>
         <AnimatedRect
-          fill="#fe718d"
+          fill={color}
           height="12"
           width="6"
           rx="3"
